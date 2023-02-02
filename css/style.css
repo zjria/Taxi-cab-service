@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap');
+
+
+/* font-family: 'Bebas Neue', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a, a:hover{
+    text-decoration: none;
+    list-style: none;
+}
+h1, h2, h3, h4, h6, a, ul, ol, button, input, p{
+    margin: 0;
+    padding: 0;
+}
+body{    
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+.bg-orange{
+    background: #ffc61a;
+}
+.text-orange{
+    color: #ffc61a;
+}
+
+
+
+/* Header Section Start */
+.header-section{
+    box-sizing: border-box;
+}
+.header-section{
+    background: url(/images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.navbar-items ul li a{
+    font-weight: 800;
+    color: white;
+    transition: 0.5s;
+}
+.navbar-items ul .active {
+    align-items: center;
+    background: #ffc61a;
+    border-radius: 20px;
+}
+.navbar-items ul li a:hover {
+    align-items: center;
+    background: #ffc61a;
+    border-radius: 20px;
+    color: black;
+}
+.header-info h3{
+    font-weight: 800;
+    font-size: 35px;
+}
+.header-info h1{
+    font-size: 71px;
+}
+.header-info p{
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Bootstrap css custom */
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+
+
+
+
+/* Responsive style */
+@media (min-width: 576px) and (max-width: 768px) {
+    .header-info h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    h3.text-orange {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .header-info h1 {
+        font-size: 50px;
+    }
+    .header-info p {
+        font-size: 15px;
+        letter-spacing: 8px;
+    }
+    img.w-75.pt-4 {
+        margin-top: 1px;
+    }
+    .pt-4 {
+        padding-top: -0.5rem!important;
+    }
+    .py-5 {
+        padding-top: -2rem!important;
+        padding-bottom: -1rem!important;
+    }
+}
+
+@media (max-width: 990px) {
+    .navbar-collapse {
+        margin-top: 25px;
+    }
+    img.w-75.pt-4 {
+        margin-top: 50px;
+    }
+    .py-5 {
+        padding-top: 0rem!important;
+        padding-bottom: 0rem!important;
+    }
+}
